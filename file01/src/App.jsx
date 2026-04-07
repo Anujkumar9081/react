@@ -1,10 +1,15 @@
+import './App.css'
 import React from 'react'
-
+import Card from './components/card.jsx'
 const App = () => {
   return (
     <div>
-      <h1>anuj yadav</h1>
-      <h1>Vedam school of technology </h1>
+      <Card user = {'Priya yadav'} age = {16}/>
+      <Card user = {'Anshu yadav'} age = {21}/>
+      <Card user = {'Malti yadav'} age = {45}/>
+      <Card user ={'Ombeer yadav'} age ={46}/>
+      <Card user ={'Anuj yadav'} age ={19}/>
+       
     </div>
   )
 }
