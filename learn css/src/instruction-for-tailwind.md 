@@ -1,0 +1,62 @@
+// ============================================
+//   TAILWIND CSS SETUP IN REACT + VITE
+// ============================================
+
+
+// STEP 1 — Create Vite React Project (skip if already created)
+// ------------------------------------------------------------
+npm create vite@latest my-app -- --template react
+cd my-app
+
+
+// STEP 2 — Install Tailwind CSS & Dependencies
+// ------------------------------------------------------------
+npm install -D tailwindcss postcss autoprefixer
+
+
+// STEP 3 — Initialize Tailwind Config
+// ------------------------------------------------------------
+npx tailwindcss init -p
+
+
+// STEP 4 — tailwind.config.js  (auto created, just update content)
+// ------------------------------------------------------------
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+
+// STEP 5 — src/index.css  (replace everything with this)
+// ------------------------------------------------------------
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+// STEP 6 — src/main.jsx  (make sure this line is there)
+// ------------------------------------------------------------
+import './index.css'
+
+
+// STEP 7 — Start Dev Server
+// ------------------------------------------------------------
+npm run dev
+
+
+// QUICK TEST — paste in App.jsx to check if Tailwind is working
+// ------------------------------------------------------------
+<h1 className="text-3xl font-bold text-blue-500">Hello Tailwind!</h1>
+
+
+// ============================================
+//  NOTE: For Tailwind v4, use this in index.css instead:
+//  @import "tailwindcss";
+// ============================================

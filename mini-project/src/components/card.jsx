@@ -32,7 +32,7 @@ const Card = (props) => {
         <span>{props.jobtype1}</span>
         <span>{props.jobtype2}</span>
       </div>
-
+f
       {/* LINE */}
       <hr />
 
