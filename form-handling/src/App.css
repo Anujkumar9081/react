@@ -1,0 +1,17 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+input{
+  padding: 10px;
+  color: green;
+  margin-right: 30px;
+}
+
+button{
+  padding: 10px;
+
+}
